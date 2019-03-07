@@ -20,41 +20,52 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * Route
+ * Task
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-03-07T10:41:56.636785+01:00[Europe/Amsterdam]")
-public class Route {
-  @JsonProperty("stationsToSwitchTrain")
-  private List<Integer> stationsToSwitchTrain = null;
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-03-07T11:03:55.318543+01:00[Europe/Amsterdam]")
+public class Task {
+  @JsonProperty("origin")
+  private Integer origin;
 
-  public Route stationsToSwitchTrain(List<Integer> stationsToSwitchTrain) {
-    this.stationsToSwitchTrain = stationsToSwitchTrain;
-    return this;
-  }
+  @JsonProperty("destination")
+  private Integer destination;
 
-  public Route addStationsToSwitchTrainItem(Integer stationsToSwitchTrainItem) {
-    if (this.stationsToSwitchTrain == null) {
-      this.stationsToSwitchTrain = new ArrayList<>();
-    }
-    this.stationsToSwitchTrain.add(stationsToSwitchTrainItem);
+  public Task origin(Integer origin) {
+    this.origin = origin;
     return this;
   }
 
    /**
-   * Get stationsToSwitchTrain
-   * @return stationsToSwitchTrain
+   * Get origin
+   * @return origin
   **/
-  @ApiModelProperty(value = "")
-  public List<Integer> getStationsToSwitchTrain() {
-    return stationsToSwitchTrain;
+  @ApiModelProperty(required = true, value = "")
+  public Integer getOrigin() {
+    return origin;
   }
 
-  public void setStationsToSwitchTrain(List<Integer> stationsToSwitchTrain) {
-    this.stationsToSwitchTrain = stationsToSwitchTrain;
+  public void setOrigin(Integer origin) {
+    this.origin = origin;
+  }
+
+  public Task destination(Integer destination) {
+    this.destination = destination;
+    return this;
+  }
+
+   /**
+   * Get destination
+   * @return destination
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDestination() {
+    return destination;
+  }
+
+  public void setDestination(Integer destination) {
+    this.destination = destination;
   }
 
 
@@ -66,22 +77,24 @@ public class Route {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Route route = (Route) o;
-    return Objects.equals(this.stationsToSwitchTrain, route.stationsToSwitchTrain);
+    Task task = (Task) o;
+    return Objects.equals(this.origin, task.origin) &&
+        Objects.equals(this.destination, task.destination);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(stationsToSwitchTrain);
+    return Objects.hash(origin, destination);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Route {\n");
+    sb.append("class Task {\n");
     
-    sb.append("    stationsToSwitchTrain: ").append(toIndentedString(stationsToSwitchTrain)).append("\n");
+    sb.append("    origin: ").append(toIndentedString(origin)).append("\n");
+    sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
     sb.append("}");
     return sb.toString();
   }

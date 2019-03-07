@@ -2,7 +2,7 @@
 
 Railways API Game!
 - API version: 1.0
-  - Build date: 2019-03-06T17:22:49.262991+01:00[Europe/Amsterdam]
+  - Build date: 2019-03-07T11:03:55.318543+01:00[Europe/Amsterdam]
 
 Find your way in the Tokyo railway system!
 

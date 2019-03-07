@@ -20,52 +20,41 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Task
+ * Route
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-03-07T10:41:56.636785+01:00[Europe/Amsterdam]")
-public class Task {
-  @JsonProperty("origin")
-  private Integer origin;
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-03-07T11:03:55.318543+01:00[Europe/Amsterdam]")
+public class Route {
+  @JsonProperty("stationsToSwitchTrain")
+  private List<Integer> stationsToSwitchTrain = null;
 
-  @JsonProperty("destination")
-  private Integer destination;
+  public Route stationsToSwitchTrain(List<Integer> stationsToSwitchTrain) {
+    this.stationsToSwitchTrain = stationsToSwitchTrain;
+    return this;
+  }
 
-  public Task origin(Integer origin) {
-    this.origin = origin;
+  public Route addStationsToSwitchTrainItem(Integer stationsToSwitchTrainItem) {
+    if (this.stationsToSwitchTrain == null) {
+      this.stationsToSwitchTrain = new ArrayList<>();
+    }
+    this.stationsToSwitchTrain.add(stationsToSwitchTrainItem);
     return this;
   }
 
    /**
-   * Get origin
-   * @return origin
+   * Get stationsToSwitchTrain
+   * @return stationsToSwitchTrain
   **/
-  @ApiModelProperty(required = true, value = "")
-  public Integer getOrigin() {
-    return origin;
+  @ApiModelProperty(value = "")
+  public List<Integer> getStationsToSwitchTrain() {
+    return stationsToSwitchTrain;
   }
 
-  public void setOrigin(Integer origin) {
-    this.origin = origin;
-  }
-
-  public Task destination(Integer destination) {
-    this.destination = destination;
-    return this;
-  }
-
-   /**
-   * Get destination
-   * @return destination
-  **/
-  @ApiModelProperty(required = true, value = "")
-  public Integer getDestination() {
-    return destination;
-  }
-
-  public void setDestination(Integer destination) {
-    this.destination = destination;
+  public void setStationsToSwitchTrain(List<Integer> stationsToSwitchTrain) {
+    this.stationsToSwitchTrain = stationsToSwitchTrain;
   }
 
 
@@ -77,24 +66,22 @@ public class Task {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Task task = (Task) o;
-    return Objects.equals(this.origin, task.origin) &&
-        Objects.equals(this.destination, task.destination);
+    Route route = (Route) o;
+    return Objects.equals(this.stationsToSwitchTrain, route.stationsToSwitchTrain);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(origin, destination);
+    return Objects.hash(stationsToSwitchTrain);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Task {\n");
+    sb.append("class Route {\n");
     
-    sb.append("    origin: ").append(toIndentedString(origin)).append("\n");
-    sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
+    sb.append("    stationsToSwitchTrain: ").append(toIndentedString(stationsToSwitchTrain)).append("\n");
     sb.append("}");
     return sb.toString();
   }
