@@ -19,11 +19,11 @@ Retrieves the ids of the origin and destination station from which the shortest 
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.TaskApi;
+//import sdk.railways.ApiClient;
+//import sdk.railways.ApiException;
+//import sdk.railways.Configuration;
+//import sdk.railways.auth.*;
+//import sdk.railways.api.TaskApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -70,11 +70,11 @@ Submits the given shortest route and validates whether it indeed is the shortest
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.TaskApi;
+//import sdk.railways.ApiClient;
+//import sdk.railways.ApiException;
+//import sdk.railways.Configuration;
+//import sdk.railways.auth.*;
+//import sdk.railways.api.TaskApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

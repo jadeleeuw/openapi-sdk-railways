@@ -1,9 +1,9 @@
-package org.openapitools.client.api;
+package sdk.railways.api;
 
-import org.openapitools.client.ApiClient;
+import sdk.railways.ApiClient;
 
-import org.openapitools.client.model.NameResponse;
-import org.openapitools.client.model.Station;
+import sdk.railways.model.NameResponse;
+import sdk.railways.model.Station;
 
 import java.util.HashMap;
 import java.util.List;
@@ -25,7 +25,7 @@ import org.springframework.http.MediaType;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Flux;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-03-07T11:03:55.318543+01:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-03-07T13:28:26.133495+01:00[Europe/Amsterdam]")
 public class StationApi {
     private ApiClient apiClient;
 

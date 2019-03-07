@@ -1,4 +1,4 @@
-package org.openapitools.client.auth;
+package sdk.railways.auth;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.MultiValueMap;

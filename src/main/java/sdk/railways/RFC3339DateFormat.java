@@ -10,7 +10,7 @@
  * Do not edit the class manually.
  */
 
-package org.openapitools.client;
+package sdk.railways;
 
 import com.fasterxml.jackson.databind.util.ISO8601DateFormat;
 import com.fasterxml.jackson.databind.util.ISO8601Utils;

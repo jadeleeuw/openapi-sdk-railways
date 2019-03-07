@@ -20,11 +20,11 @@ Returns the railway with the given id.
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.RailwayApi;
+//import sdk.railways.ApiClient;
+//import sdk.railways.ApiException;
+//import sdk.railways.Configuration;
+//import sdk.railways.auth.*;
+//import sdk.railways.api.RailwayApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -75,11 +75,11 @@ Returns all railways on the map.
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.RailwayApi;
+//import sdk.railways.ApiClient;
+//import sdk.railways.ApiException;
+//import sdk.railways.Configuration;
+//import sdk.railways.auth.*;
+//import sdk.railways.api.RailwayApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -126,11 +126,11 @@ Returns the ids of all stations connected to the given railway.
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.RailwayApi;
+//import sdk.railways.ApiClient;
+//import sdk.railways.ApiException;
+//import sdk.railways.Configuration;
+//import sdk.railways.auth.*;
+//import sdk.railways.api.RailwayApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

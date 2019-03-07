@@ -11,7 +11,7 @@
  */
 
 
-package org.openapitools.client.model;
+package sdk.railways.model;
 
 import java.util.Objects;
 import java.util.Arrays;
